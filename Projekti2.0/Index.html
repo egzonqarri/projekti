@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movix - Library of 1.000+ Movies</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <h1>Movix</h1>
+
+            <ul>
+                <li><a href="Index.html" class="active">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="Futuremovies.html">Future Movies</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <button class="btn-primary" onclick=openLoginPopup()>Login</button>
+            
+    </nav>
+
+    
+    </header>
+
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Moovix</h1>
+            <p>Experience the magic of cinema like never before. Discover the latest blockbuster movies, exclusive releases, and more.</p>
+            
+            <div class="button-group">
+                <button class="btn-secondary"><a href="">Future Movies</a></button>
+            <button class="btn-primary" ><a href="">Explore Movies</a></button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="overlay"></div>
+        <div class="cta-content">
+
+            
+            <img class="popcorn-img" src="assets/images/popcorn.png" alt="">
+            <h2 class="cta-heading">Enjoyed the Movies?</h2>
+            <p class="cta-description">Share your thoughts and help others discover great movies by rating your favorites!</p>
+
+            <button class="btn-primary"><a href="Movies.html">Rate Movies</a></button>
+           
+
+        </div>
+            
+        </div>
+    </section>
+
+<!-- Login Popup -->
+<div id="loginPopup" class="login-popup">
+    <div class="login-form">
+        <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+        <h2>Login</h2>
+        <form onsubmit="login(event)">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail">
+            <br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword">
+            <br>
+            <button class="btn-primary" type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <span class="switch-link" onclick="switchToRegister()">Register</span></p>
+    </div>
+
+    <div class="register-form">
+        <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+        <h2>Register</h2>
+        <form onsubmit="register(event)">
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" required>
+            <br>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+            <br>
+            <button class="btn-primary" type="submit">Register</button>
+        </form>
+        <p>Already have an account? <span class="switch-link" onclick="switchToLogin()">Login</span></p>
+    </div>
+</div>
+
+    <footer class="footer">
+        <h1 class="footer-logo">Movix</h1>
+        <ul class="footer-nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Future Movies</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+
+
+    
+    <script src="javascript.js"></script>
+</body>
+</html>

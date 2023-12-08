@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movix - Library of 1.000+ Movies</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <h1>Movix</h1>
+
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="Futuremovies.html">Future Movies</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+            </ul>
+            <button class="btn-primary" onclick=openLoginPopup()>Login</button>
+    </nav>
+    </header>
+
+
+    <!-- Login Popup -->
+<div id="loginPopup" class="login-popup">
+    <div class="login-form">
+        <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+        <h2>Login</h2>
+        <form onsubmit="login(event)">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail">
+            <br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword">
+            <br>
+            <button class="btn-primary" type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <span class="switch-link" onclick="switchToRegister()">Register</span></p>
+    </div>
+
+    <div class="register-form">
+        <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+        <h2>Register</h2>
+        <form onsubmit="register(event)">
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" required>
+            <br>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+            <br>
+            <button class="btn-primary" type="submit">Register</button>
+        </form>
+        <p>Already have an account? <span class="switch-link" onclick="switchToLogin()">Login</span></p>
+    </div>
+</div>
+
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Movix Cinema, where the magic of movies comes to life. At Movix, we are passionate about providing an exceptional cinematic experience for movie enthusiasts of all ages.</p>
+    
+        <p>Our journey began with a simple idea: to create a space where people can immerse themselves in the world of storytelling through captivating films. Whether you're a fan of thrilling adventures, heartwarming dramas, or laugh-out-loud comedies, Movix has something for everyone.</p>
+    
+        <h2>Our Mission</h2>
+        <p>Our mission is to bring people together through the power of cinema. We strive to be a hub for entertainment, where families, friends, and individuals can create lasting memories while enjoying the latest and greatest in film.</p>
+    
+        <h2>What Sets Us Apart</h2>
+        <p>At Movix, we pride ourselves on offering more than just movies. We aim to create an immersive experience from the moment you step through our doors. Our state-of-the-art theaters, comfortable seating, and top-notch audio-visual technology ensure that your time with us is nothing short of extraordinary.</p>
+    
+        <h2>Contact Us</h2>
+        <p>Have questions, suggestions, or just want to say hello? We'd love to hear from you!</p>
+        <p>Email: info@movixcinema.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+    
+
+    <footer class="footer">
+        <h1 class="footer-logo">Movix</h1>
+        <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Future Movies</a></li>
+            <li><a href="#"  class="active" >About</a></li>
+            <li><a href="Privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+
+
+      
+    <script src="javascript.js"></script>
+</body>
+</html>
